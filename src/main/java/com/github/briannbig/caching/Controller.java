@@ -28,7 +28,7 @@ public class Controller {
         return ResponseEntity.of(service.getBookById(id));
     }
 
-    @GetMapping("/{author}")
+    @GetMapping("author/{author}")
     public ResponseEntity<List<Book>> getBooksByAuthor(String author) {
         return ResponseEntity.ofNullable(service.getBooksByAuthor(author));
     }
